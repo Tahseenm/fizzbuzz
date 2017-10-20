@@ -1,0 +1,19 @@
+{
+  env: {
+    node: {
+      presets: [
+        ['env', {targets: {node: 'current'}}]
+      ]
+    },
+
+    lib: {
+      presets: ['env']
+    },
+
+    es: {
+      presets: [
+        ['env', {modules: false}]
+      ]
+    },
+  }
+}
