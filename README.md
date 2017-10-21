@@ -86,7 +86,7 @@ import playFizzBuzz from 'fizz_buzz'
 const printToDOM = (wrapper) => (val) => {
   const elem = document.createElement('li')
 
-  elem.innerHTML = `<span class="${typeof val === 'string' ? 'fizzbuzz' : ''}">
+  elem.innerHTML = `<span class="${typeof val === 'string' ? 'fizzbuzz' : 'number'}">
     ${val}
   </span>`
 
@@ -94,7 +94,7 @@ const printToDOM = (wrapper) => (val) => {
 }
 
 
-const wrapper = document.getElementById('wrapper')
+const wrapper = document.getElementById('fizzbuzz-wrapper')
 playFizzBuzz(printToDOM(wrapper), 100)
 ```
 
