@@ -1,5 +1,7 @@
 [![travis build](https://img.shields.io/travis/Tahseenm/fizzbuzz.svg?style=flat-square)](https://travis-ci.org/Tahseenm/fizzbuzz)
 [![codecov coverage](https://img.shields.io/codecov/c/github/Tahseenm/fizzbuzz.svg?style=flat-square)](https://codecov.io/github/Tahseenm/fizzbuzz)
+[![version](https://img.shields.io/npm/v/fizz_buzz.svg?style=flat-square)](http://npm.im/fizz_buzz)
+[![MIT License](https://img.shields.io/npm/l/fizz_buzz.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 
 # Fizz Buzz
