@@ -8,6 +8,9 @@ export const required = () => {
 /**
  * Check if `x` is a multiple of given factors
  *
+ * @example
+ *   multipleOf(5, 7)(35)
+ *   multiple(9)(36)
  * @param {number} factors
  * @param {number} x
  * @return {boolean}
