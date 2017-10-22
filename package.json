@@ -31,7 +31,9 @@
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup --config",
     "prereport-coverage": "npm run test:coverage",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "prepublishOnly": "npm run build"
+    "release:patch": "npm run build && npm version patch && git push && npm publish",
+    "release:minor": "npm run build && npm version minor && git push && npm publish",
+    "release:major": "npm run build && npm version major && git push && npm publish"
   },
   "repository": {
     "type": "git",
