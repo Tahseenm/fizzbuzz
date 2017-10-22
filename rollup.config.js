@@ -7,7 +7,7 @@ const env = process.env.NODE_ENV
 const config = {
   input: 'src/index.js',
   output: {
-    file: env === 'production' ? 'dist/fizzbuzz.min.js' : 'dist/fizzbizz.js',
+    file: env === 'production' ? 'dist/fizzbuzz.min.js' : 'dist/fizzbuzz.js',
     format: 'umd',
   },
 
