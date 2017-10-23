@@ -41,12 +41,12 @@ projects. This was inspired by @kentcdodds awesome course on [egghead](https://e
 ## Installation
 Using npm
 ```bash
-npm install --save fizz_buzz
+> npm install --save fizz_buzz
 ```
 
 Using yarn
 ```bash
-yarn add fizz_buzz
+> yarn add fizz_buzz
 ```
 
 
@@ -54,41 +54,45 @@ yarn add fizz_buzz
 ### Example 1
 ```javascript
 import playFizzBuzz from 'fizz_buzz'
+import isString from './utils'
 
 
 /**
  * Sexy `Fizz` / `Buzz` / `FizzBuzz` console logging ✨
  */
-const log = val => typeof val === 'string'
-  ? console.log(`%c${val}`, `
+const printToConsole = (val) => {
+  const styles = {
+    reg: 'font-size: 14px',
+    fancy: `
       padding: 3px;
       font-size: 14px;
       font-weight: bold;
       color: tomato;
       background-color: #000;
-    `)
-  : console.log(`%c${val}`, 'font-size: 14px;')
+    `,
+  }
 
-const play => {
-  console.group('FizzBuzz')
-  playFizzBuzz(log, 100)
-  console.groupEnd('FizzBuzz')
+  console.log(`%c${val}`, isString(val) ? styles.fancy : styles.reg)
 }
 
 
-play()
+playFizzBuzz(printToConsole)
 ```
 
 
 ### Example 2
 ```javascript
 import playFizzBuzz from 'fizz_buzz'
+import isString from './utils'
 
 
-const printToDOM = (wrapper) => (val) => {
+const wrapper = document.getElementById('fizzbuzz-wrapper')
+
+const printToPage = (val) => {
   const elem = document.createElement('li')
+  const className = isString(val) ? 'fizzbuzz' : 'number'
 
-  elem.innerHTML = `<span class="${typeof val === 'string' ? 'fizzbuzz' : 'number'}">
+  elem.innerHTML = `<span class="${className}">
     ${val}
   </span>`
 
@@ -96,8 +100,7 @@ const printToDOM = (wrapper) => (val) => {
 }
 
 
-const wrapper = document.getElementById('fizzbuzz-wrapper')
-playFizzBuzz(printToDOM(wrapper), 100)
+playFizzBuzz(printToPage)
 ```
 
 
