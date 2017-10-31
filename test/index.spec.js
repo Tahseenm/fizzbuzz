@@ -14,7 +14,7 @@ describe('Fizz Buzz Game', () => {
 
   it('should call the print function correct number of times', () => {
     const mockPrint = jest.fn()
-    playFizzBuzz(mockPrint, 10)
+    playFizzBuzz(mockPrint, 1, 10)
 
     const expected = 10
     const actual = mockPrint.mock.calls.length
@@ -71,11 +71,31 @@ describe('Fizz Buzz Game', () => {
   it('should call print with fizzBuzz output', () => {
     const mockPrint = jest.fn()
     const total = 100
-    playFizzBuzz(mockPrint, total)
+    playFizzBuzz(mockPrint, 1, total)
 
     // [[1], [2], ['Fizz'], [4], ['Buzz'], ['Fizz'], [7] ...]
     const expected = Array(total).fill().map((_, i) => [fizzBuzz(i + 1)])
     const actual = mockPrint.mock.calls
+
+    expect(actual).toEqual(expected)
+  })
+
+  it('should start at minimum value', () => {
+    const mockPrint = jest.fn()
+    playFizzBuzz(mockPrint, 31)
+
+    const expected = 31
+    const actual = mockPrint.mock.calls[0][0]
+
+    expect(actual).toEqual(expected)
+  })
+
+  it('should stop at the maximum value', () => {
+    const mockPrint = jest.fn()
+    playFizzBuzz(mockPrint, 1, 2)
+
+    const expected = 2
+    const actual = mockPrint.mock.calls.slice(-1)[0][0]
 
     expect(actual).toEqual(expected)
   })

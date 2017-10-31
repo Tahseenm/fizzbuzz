@@ -11,9 +11,9 @@ export const fizzBuzz = x => multipleOf(3, 5)(x) ? 'FizzBuzz'
 
 
 /** :: (print: Function, max: number?) -> void */
-const play = (print = required(), max = 100) => {
-  for (let number = 1; number <= max; number += 1) {
-    print(fizzBuzz(number))
+const play = (print = required(), min = 1, max = 100) => {
+  for (let num = min; num <= max; num += 1) {
+    print(fizzBuzz(num))
   }
 }
 
