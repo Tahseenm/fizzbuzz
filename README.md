@@ -1,18 +1,44 @@
-[![travis build](https://img.shields.io/travis/Tahseenm/fizzbuzz.svg?style=flat-square)](https://travis-ci.org/Tahseenm/fizzbuzz)
-[![codecov coverage](https://img.shields.io/codecov/c/github/Tahseenm/fizzbuzz.svg?style=flat-square)](https://codecov.io/github/Tahseenm/fizzbuzz)
-[![version](https://img.shields.io/npm/v/fizz_buzz.svg?style=flat-square)](http://npm.im/fizz_buzz)
-[![MIT License](https://img.shields.io/npm/l/fizz_buzz.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+<!-- REPO BADGES -->
+<p align="center">
+  <!-- Travis Build Status -->
+  <a href="https://travis-ci.org/Tahseenm/fizzbuzz">
+    <img
+      height="25"
+      src="https://img.shields.io/travis/Tahseenm/fizzbuzz.svg?style=flat-square"
+      alt="Travis Build">
+  </a>
+
+  <!-- Code coverage report -->
+  <a href="https://codecov.io/github/Tahseenm/fizzbuzz">
+    <img
+      height="25"
+      src="https://img.shields.io/codecov/c/github/Tahseenm/fizzbuzz.svg?style=flat-square"
+      alt="Codecov Coverage" >
+  </a>
+
+  <!-- NPM version -->
+  <a href="http://npm.im/fizz_buzz">
+    <img
+      height="25"
+      src="https://img.shields.io/npm/v/fizz_buzz.svg?style=flat-square"
+      alt="Version" >
+  </a>
+
+  <!-- LICENSE -->
+  <a href="http://opensource.org/licenses/MIT">
+    <img
+      height="25"
+      src="https://img.shields.io/npm/l/fizz_buzz.svg?style=flat-square"
+      alt="MIT License">
+  </a>
+</p><!-- ./REPO BADGES -->
 
 
-# Fizz Buzz
-Play the classic interview Fizz Buzz game ✨
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
+# Fizz Buzz ✨
+Play the classic interview Fizz Buzz game
 
-
-![Why Fizz Buzz](http://gifimage.net/wp-content/uploads/2017/07/but-why-gif-11.gif)
+<img width="300" src="http://gifimage.net/wp-content/uploads/2017/07/but-why-gif-11.gif" alt="MIT License">
 
 Why not? A great **template** for opensource javascript 
 projects. This was inspired by @kentcdodds awesome course on [egghead](https://egghead.io/courses/how-to-write-an-open-source-javascript-library)
@@ -20,8 +46,9 @@ projects. This was inspired by @kentcdodds awesome course on [egghead](https://e
 
 ## Table of Contents
 * [Requirements](#requirements)
+* [Browser Support](#browser-support)
 * [Installation](#installation)
-* Documentation
+* [Documentation](#documentation)
   * [Example 1](#example-1)
   * [Example 2](#example-2)
 * [Contributors](#contributors)
@@ -31,7 +58,8 @@ projects. This was inspired by @kentcdodds awesome course on [egghead](https://e
 ## Requirements
 [NodeJS](https://nodejs.org/en/)
 
-#### Browser Support
+
+## Browser Support
 
 | Chrome | Safari | IE / Edge | Firefox | Opera |
 | ------ | ------ | --------- | ------- | ----- |
@@ -39,12 +67,12 @@ projects. This was inspired by @kentcdodds awesome course on [egghead](https://e
 
 
 ## Installation
-Using npm
+Using [npm](https://www.npmjs.com/)
 ```bash
 > npm install --save fizz_buzz
 ```
 
-Using yarn
+Using [yarn](https://yarnpkg.com/en/)
 ```bash
 > yarn add fizz_buzz
 ```
